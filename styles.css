@@ -49,22 +49,13 @@
   }
 
   .nav-links {
-    display: flex;
-    justify-content: center; /* Center the navigation links */
-    list-style: none;
-    padding: 0.5rem;
-    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
   }
 
   .nav-links li {
-    margin: 0 1rem;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    text-align: center;
+    margin: 0.5rem 0;
   }
 
   .hero-container {
@@ -110,29 +101,21 @@
     text-align: center;
   }
 
+  /* Portfolio photo should appear above the name on mobile */
   .profile-photo {
     width: 180px;
     height: 180px;
     margin-bottom: 20px; /* Ensure it stays above the name */
   }
 
+  .profile-photo, .hero-text, .hero-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .nav-links {
     padding: 0;
-    justify-content: center; /* Center the navigation items */
-    list-style: none;
-    margin: 0;
-  }
-
-  .nav-links li {
-    margin: 0 1rem;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    text-align: center;
-    padding: 0.5rem;
   }
 
   .card {
@@ -171,11 +154,9 @@ body {
 header h1 {
   font-size: 2.5rem;
 }
-
 header p {
   font-size: 1.2rem;
 }
-
 header .btn-primary {
   display: inline-block;
   margin-top: 1rem;
@@ -293,4 +274,4 @@ footer {
 
 .slide-in {
   animation: fadeIn 1.5s ease-out;
-  }
+}
