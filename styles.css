@@ -5,15 +5,116 @@
   padding: 20px; /* Default padding */
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) { /* Large tablets and small laptops */
+  .container {
+    padding: 20px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+  }
+
+  .hero-photo {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 768px) { /* Tablets and smaller */
   .container {
     padding: 15px;
+  }
+
+  .header {
+    height: auto; /* Adjust header height for smaller screens */
+    padding: 30px 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 480px) { /* Mobile devices */
   .container {
     padding: 10px;
+  }
+
+  .header {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .nav-links {
+    padding: 0;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
   }
 }
 
@@ -31,18 +132,15 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  linear-gradient(to right, rgba(white) 50%), url("img/background.jpg") no-repeat center center/cover; /* Image in the same folder */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 50%), url("img/background.jpg") no-repeat center center/cover;
   background-blend-mode: overlay;
   transition: filter 0.3s ease-in-out; /* Smooth blur transition */
   z-index: -1; /* Keeps the header behind content */
 }
 
-
-
 .scrolled .header {
   filter: blur(5px); /* Blurs the image when scrolling */
 }
-
 
 header h1 {
   font-size: 2.5rem;
@@ -89,7 +187,6 @@ header.hero-section {
   color: #007bff;
   font-weight: bold;
 }
-
 
 .hero-container {
   display: flex;
@@ -155,7 +252,6 @@ footer {
   background: #333;
   color: white;
 }
-
 
 /* Animations */
 @keyframes fadeIn {
