@@ -31,7 +31,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  linear-gradient(to right, rgba(255, 255, 255, 0.6) 50%), url('background.jpg') no-repeat center center/cover; /* Image in the same folder */
+  linear-gradient(to right, rgba(white) 50%), url('background.jpg') no-repeat center center/cover; /* Image in the same folder */
   background-blend-mode: overlay;
   transition: filter 0.3s ease-in-out; /* Smooth blur transition */
   z-index: -1; /* Keeps the header behind content */
