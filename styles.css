@@ -11,6 +11,77 @@
     margin: 10px;
     max-width: 100%;
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Responsive Font Sizes */
+h1 {
+    font-size: 5vw; /* Scale font size with viewport width */
+}
+h2 {
+    font-size: 4vw;
+}
+p {
+    font-size: 3vw;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%; /* Scale image to fit container width */
+    height: auto;   /* Maintain aspect ratio */
+}
+
+/* Responsive Containers */
+.container {
+    max-width: 100%; /* Ensure container fits the width */
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw; /* Slightly larger font on smaller screens */
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 4vw;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 6vw;
+    }
+    p {
+        font-size: 5vw;
+    }
+    .container {
+        padding: 5px;
+    }
+}
 
 
 /* General Styles */
