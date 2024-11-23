@@ -113,6 +113,11 @@ header.hero-section {
   object-fit: cover;
   animation: fadeIn 2s ease-in-out;
 }
+/* Responsive Images */
+img {
+    max-width: 100%; /* Scale image to fit container width */
+    height: auto;   /* Maintain aspect ratio */
+}
 
 .section {
   padding: 2rem 1rem;
