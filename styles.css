@@ -5,6 +5,60 @@
     box-sizing: border-box;
 }
 
+/* Body and Main Container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    max-width: 100%; /* Ensure the container scales */
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Images and Media */
+img, video {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Text */
+h1, h2, h3, p {
+    word-wrap: break-word;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Ensure the layout adjusts to smaller screens */
 body {
     font-family: Arial, sans-serif;
