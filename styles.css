@@ -61,7 +61,7 @@ header .btn-primary {
 
 header.hero-section {
   background: linear-gradient(to right, #007bff, #6610f2),url('headerbackground.jpg') no-repeat center center/cover;
-  color: white;
+  color: white;/* White with 70% opacity */
   text-align: center;
   padding: 2rem 1rem;
 }
