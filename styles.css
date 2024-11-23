@@ -50,30 +50,21 @@
 
   .nav-links {
     display: flex;
-    justify-content: flex-start;
-    overflow-x: auto; /* Allow horizontal scrolling */
+    justify-content: center; /* Center the navigation links */
     list-style: none;
     padding: 0.5rem;
     margin: 0;
-    scroll-snap-type: x mandatory;
-    width: 100%; /* Ensure the nav fits within screen width */
-    box-sizing: border-box; /* Include padding and margins in width calculation */
   }
 
   .nav-links li {
     margin: 0 1rem;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    min-width: 120px; /* Minimum width for each nav item to avoid shrinking too much */
   }
 
   .nav-links a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
-    display: block; /* Ensures the clickable area is the full width of the item */
     text-align: center;
-    padding: 0.5rem;
   }
 
   .hero-container {
@@ -127,22 +118,13 @@
 
   .nav-links {
     padding: 0;
-    justify-content: flex-start;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: center; /* Center the navigation items */
+    list-style: none;
+    margin: 0;
   }
 
   .nav-links li {
-    margin: 0 15px;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    min-width: 120px;
+    margin: 0 1rem;
   }
 
   .nav-links a {
@@ -311,4 +293,4 @@ footer {
 
 .slide-in {
   animation: fadeIn 1.5s ease-out;
-}
+  }
