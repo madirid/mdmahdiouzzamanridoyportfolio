@@ -56,18 +56,24 @@
     padding: 0.5rem;
     margin: 0;
     scroll-snap-type: x mandatory;
+    width: 100%; /* Ensure the nav fits within screen width */
+    box-sizing: border-box; /* Include padding and margins in width calculation */
   }
 
   .nav-links li {
     margin: 0 1rem;
     flex-shrink: 0;
     scroll-snap-align: center;
+    min-width: 120px; /* Minimum width for each nav item to avoid shrinking too much */
   }
 
   .nav-links a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    display: block; /* Ensures the clickable area is the full width of the item */
+    text-align: center;
+    padding: 0.5rem;
   }
 
   .hero-container {
@@ -159,9 +165,11 @@ body {
 header h1 {
   font-size: 2.5rem;
 }
+
 header p {
   font-size: 1.2rem;
 }
+
 header .btn-primary {
   display: inline-block;
   margin-top: 1rem;
