@@ -127,6 +127,30 @@
 
   .nav-links {
     padding: 0;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    min-width: 120px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
   }
 
   .card {
