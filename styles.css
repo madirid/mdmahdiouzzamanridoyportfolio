@@ -1,3 +1,54 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body stretches to full width */
+body {
+    width: 100%; /* Full device width */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Containers auto-stretch */
+.container {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Prevent exceeding viewport width */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Images auto-scale and stretch */
+img {
+    display: block; /* Prevent inline spacing issues */
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Font Sizes */
+h1 {
+    font-size: 6vw; /* Scale based on viewport width */
+}
+
+p {
+    font-size: 4vw;
+}
+
+/* Ensure videos auto-stretch */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size
+
 /* Flexbox Layout */
 .container {
     display: flex;
