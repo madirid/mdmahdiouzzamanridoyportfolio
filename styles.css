@@ -1,21 +1,4 @@
-/* Responsive Margins for Container */
-.container {
-  max-width: 1200px; /* Limit container width */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Default padding */
-}
 
-@media (max-width: 768px) { /* Tablets and smaller */
-  .container {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) { /* Mobile devices */
-  .container {
-    padding: 10px;
-  }
-}
 
 /* General Styles */
 body {
